@@ -3,6 +3,7 @@ Using REST API to Manage a List of Books Using Node.js and Express.
 <br>
 This is a simple RESTful API for managing a list of books with a user-friendly interface.
 <br>
+
 ## Features
 Add Books
 <br>
@@ -16,4 +17,12 @@ Form validation
 <br>
 Clean UI styling with CSS
 
+## Tech stack
+Node.js
+<br>
+Express.js
+<br>
+HTML/CSS
+<br>
+JavaScript
 
