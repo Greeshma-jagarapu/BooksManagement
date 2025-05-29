@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <section class="hero-section">
+        <h2>Welcome — Manage Books the Smarter Way</h2>
+        <p>Simplify Your Library - Manage Books with Ease.</p>
+        <p>Smart Book Management at Your Fingertips.</p>
+        <p>Effortless Book Tracking - Add, Edit, or Remove in Seconds.</p>
+    </section>
+    <div class="container">
+        <section class="books-section">
+            <h2>Books List</h2>
+            <ul id="bookList"></ul>
+        </section>
+        
+        <section class="booksAdd-section">
+            <h2>Add New Book</h2>
+        <div class="form">
+            <input type="text" id="title" placeholder="Title">
+            <input type="text" id="author" placeholder="Author">
+            <button onclick="addBook()">Add Book</button>
+        </div>
+        </section>
+        
+        <section class="booksUpdate-section">
+            <h2>Update Book</h2>
+            <div id="form" class="form">
+                <input type="number" id="editId" placeholder="Book ID to update">
+                <input type="text" id="editTitle" placeholder="New Title">
+                <input type="text" id="editAuthor" placeholder="New Author">
+                <button onclick="updateBook()">Update Book</button>
+            </div>
+        </section>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

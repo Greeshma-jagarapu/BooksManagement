@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.hero-section{
+    height: 80vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)),url('images/1748512765028.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center; */
+    color: white;
+    /* object-fit: fill; */
+}
+
+.hero-section h2{
+    padding: 3rem 0 6rem;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.hero-section p{
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: rgb(245, 209, 7);
+    font-weight: 600;
+}
+
+.container{
+    padding: 4rem;
+    background: lightgrey;
+}
+
+.books-section{
+    padding: 1rem;
+}
+
+.books-section h2,.booksAdd-section h2,.booksUpdate-section h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+.books-section ul{
+    margin: 2rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.books-section ul li{
+    list-style: none;
+    width: 250px;
+    height: 280px;
+    background: rgb(238, 237, 237);
+    padding: 2rem 1rem;
+    line-height: 1.8rem;
+    box-shadow: 2px 2px 3px rgb(0, 0, 0, 0.8);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.books-section ul li p{
+    text-align: center;
+}
+
+.books-section ul li p span{
+    color: rgb(112, 10, 112);
+    font-weight: bold;
+}
+
+.books-section button{
+    width: 100%;
+    border: none;
+    outline: none;
+    height: 2rem;
+    border-radius: 5px;
+    margin-top: 1rem;
+    color: white;
+}
+
+.books-section #edit-btn{
+    background: blue;
+}
+
+.books-section #del-btn{
+    background: rgb(202, 49, 2);
+}
+
+.booksAdd-section,.booksUpdate-section{
+    margin-top: 2rem;
+}
+
+.booksUpdate-section{
+   margin-top: 5rem;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    margin: 3rem auto;
+    padding: 2rem;
+    background: rgb(235, 230, 230);
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px grey;
+}
+
+.form input{
+    display: block;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    background: transparent;
+    border: 1px solid grey;
+}
+
+.form button{
+    width: 90px;
+    height: 35px;
+    border: none;
+    outline: none;
+    background: green;
+    margin: 0 auto;
+    border-radius: 3px;
+    color: white;
+}
+
+@media (min-width: 681px) and (max-width: 960px){
+    .form{
+        width: 70%;
+    }
+}
+
+@media (max-width: 680px){
+    .form{
+        width: 80%;
+    }
+}
+
+@media (max-width: 540px){
+    .form{
+        width: 90%;
+    }
+}
+
+@media (max-width: 415px){
+    .form{
+        width: 100%;
+    }
+}
